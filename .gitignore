@@ -1,7 +1,6 @@
 orbit-da/node_modules/*
 orbit-da/cache
 orbit-da/artifacts
-orbit-da/config/*
 orbit-da/.DS_Store
 orbit-da/outputInfo.json
 orbit-da/config/.DS_Store
