@@ -1,0 +1,8 @@
+{
+	"auths": {
+		"disco.forta.network": {},
+		"https://index.docker.io/v1/": {}
+	},
+	"credsStore": "osxkeychain",
+	"currentContext": "desktop-linux"
+}
