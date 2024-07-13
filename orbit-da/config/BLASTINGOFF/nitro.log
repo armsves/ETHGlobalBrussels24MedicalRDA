@@ -1,0 +1,3 @@
+INFO [07-13|18:32:46.153] Running Arbitrum nitro node              revision=development vcs.time=development
+INFO [07-13|18:32:47.168] connected to l1 chain                    l1url=https://sepolia-rollup.arbitrum.io/rpc l1chainid=421,614
+INFO [07-13|18:32:47.463] retaining ability to lookup full transaction history as archive mode is enabled 
