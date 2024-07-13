@@ -1,10 +1,10 @@
-import { ConnectButton, } from '@rainbow-me/rainbowkit';
+import { ConnectButton, connectorsForWallets, } from '@rainbow-me/rainbowkit';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { useAccount } from 'wagmi';
 import { initialize, getKeyringFromSeed } from 'avail-js-sdk';
-import CryptoJS from 'crypto-js';
+import { AES, enc } from 'crypto-js';
 import config from '../config/config';
 import React, { useState } from 'react';
 import Image from 'next/image'
@@ -12,17 +12,64 @@ import Image from 'next/image'
 const Home: NextPage = () => {
   const { address } = useAccount();
   const aesKey = '6a7323282017908dc895116981c04ed65e496786';
+  const secretKey = '6a7323282017908dc895116981c04ed65e496786';
   const [txHash, setTxHash] = useState('');
   const [blockHash, setBlockHash] = useState('');
-  const [medicalData, setMedicalData] = useState('');
+  const [medicalData, setMedicalData] = useState<File[] | null>(null);
   const [decryptedData, setDecryptedData] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [pdfUrl, setPdfUrl] = useState('');
+  const [encryptedData, setEncryptedData] = useState<string>('');
 
-  const aesEncrypt = (documentContent: string, secretKey: string) => {
-    var ciphertext = CryptoJS.AES.encrypt(documentContent, secretKey).toString();
-    console.log('ciphertext', ciphertext);
-    return ciphertext;
+  const blobToBase64 = (blob: Blob): Promise<string> => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onloadend = () => resolve(reader.result as string);
+      reader.onerror = reject;
+      reader.readAsDataURL(blob);
+    });
   };
+
+  const base64ToBlob = (base64: string, type = 'application/pdf'): Blob => {
+    const binaryString = window.atob(base64.split(',')[1]);
+    const len = binaryString.length;
+    const bytes = new Uint8Array(len);
+    for (let i = 0; i < len; i++) {
+      bytes[i] = binaryString.charCodeAt(i);
+    }
+    return new Blob([bytes], { type });
+  };
+  
+  const handleButtonClick = async () => {
+    const file = medicalData && medicalData.length > 0 ? medicalData[0] : null;
+    console.log('file', file);
+    if (file) {
+      const base64 = await blobToBase64(file);
+      const encrypted = await AES.encrypt(base64, secretKey).toString();
+      setEncryptedData(encrypted);
+      console.log('File encrypted and stored',encryptedData);
+    }
+  
+    if (!encryptedData) {
+      alert('No encrypted data found');
+      return;
+    }
+    setIsLoading(true);
+    try {
+      setTxHash('');
+      setBlockHash('');
+      setPdfUrl('');
+      setDecryptedData('');
+      const [txHash, blockHash] = await sendToAvail(encryptedData);
+      setIsLoading(false);
+      console.log('txHash', txHash);
+      console.log('blockHash', blockHash);
+    } catch (error) {
+      // Handle the error
+      setIsLoading(false);
+      console.error('Encryption or sending failed', error);
+    }
+  }
 
   const sendToAvail = async (encryptedDocument: string) => {
     console.log(`Sending ${encryptedDocument} to Avail`);
@@ -45,7 +92,6 @@ const Home: NextPage = () => {
 
     console.log('Done Sending to Avail');
 
-    // Rejected Transaction handling
     if (txResult.isError) {
       console.log(`Transaction was not executed`);
     }
@@ -55,30 +101,10 @@ const Home: NextPage = () => {
 
     setTxHash(txHash);
     setBlockHash(blockHash);
+    console.log('txHash set', txHash);
+    console.log('blockHash set', blockHash);
 
     return [txHash, blockHash];
-  };
-
-  const handleButtonClick = async () => {
-    setIsLoading(true); // Start loading
-    const documentContent = medicalData;
-    //const aesKey = CryptoJS.lib.WordArray.random(20).toString();
-    console.log('aesKey', aesKey);
-    const encryptedDocument = aesEncrypt(documentContent, aesKey);
-    console.log('encryptedDocument', encryptedDocument);
-    try {
-      setTxHash('');
-      setBlockHash('');
-      setMedicalData('');
-      setDecryptedData('');
-      const [txHash, blockHash] = await sendToAvail(encryptedDocument);
-      console.log('txHash', txHash);
-      console.log('blockHash', blockHash);
-    } catch (error) {
-      console.error('Error storing document:', error);
-    } finally {
-      setIsLoading(false); // End loading
-    }
   };
 
   const handleButtonClickRetrieve = async () => {
@@ -88,6 +114,8 @@ const Home: NextPage = () => {
 
   const retrieveFromAvail = async (txHash: string, blockHash: string) => {
     // Initialize the Avail API and retrieve the account from seed
+    console.log('txHash ret', txHash.toString());
+    console.log('blockHash ret', typeof blockHash);
     const api = await initialize(config.endpoint);
     const account = getKeyringFromSeed(config.seed);
     console.log('Account initialized:', account);
@@ -96,25 +124,18 @@ const Home: NextPage = () => {
     console.log(`Transaction Hash: ${txHash}, Block Hash: ${blockHash}`);
 
     // Fetch the block using the block hash
-    const block = await api.rpc.chain.getBlock(blockHash);
+    const block = await api.rpc.chain.getBlock(blockHash.toString());
     console.log('Block details:', block);
 
     // Find the specific transaction in the block's extrinsics
-    const tx = block.block.extrinsics.find((extrinsic) => extrinsic.hash.toHex() === txHash);
+    const tx = block.block.extrinsics.find((extrinsic) => extrinsic.hash.toHex() === txHash.toString());
     console.log('Transaction details:', tx);
 
-    // Handle case where transaction is not found
     if (!tx) {
       console.error('Failed to find the Submit Data transaction');
-      //process.exit(1);
     } else {
-
-
-      // Decode the data from the transaction
       const dataAsString = new TextDecoder().decode(new Uint8Array(tx.data));
       console.log('Decoded data:', dataAsString);
-
-      // Convert the tran saction method arguments from hex to string
       const dataHex = tx.method.args.map((arg) => arg.toString()).join(', ');
       let decodedString = '';
       for (let n = 0; n < dataHex.length; n += 2) {
@@ -123,15 +144,16 @@ const Home: NextPage = () => {
       console.log(`Submitted data: ${decodedString}`);
 
       let encryptedDocContent = decodedString.replace(/^\x00+/, '');
-      console.log('Cleaned encryptedDocContent:', encryptedDocContent);
-      const decryptedContent = CryptoJS.AES.decrypt(encryptedDocContent, aesKey).toString(
-        CryptoJS.enc.Utf8
-      );
-      console.log('Decrypted Content:', decryptedContent);
+
+      const decrypted = await AES.decrypt(encryptedDocContent, secretKey);
+      const base64 = await decrypted.toString(enc.Utf8);
+      const decryptedBlob = await base64ToBlob(base64);
+  
+      const pdfUrl = await URL.createObjectURL(decryptedBlob);
+      setPdfUrl(pdfUrl);
+      const decryptedContent = "decripted";
       return decryptedContent;
     }
-
-
   };
 
   return (
@@ -160,12 +182,17 @@ const Home: NextPage = () => {
               <div className="medicalForm">
                 <input
                   className={styles.medicalInput}
-                  type="text"
-                  value={medicalData}
-                  onChange={(e) => setMedicalData(e.target.value)}
-                  placeholder="Sensitive Medical Data"
+                  type="file"
+                  accept="application/pdf"
+                  onChange={(e) => {
+                    if (e.target.files && e.target.files.length > 0) {
+                      setMedicalData([e.target.files[0]]);
+                    }
+                  }}
+                  placeholder="Upload Sensitive Medical Data"
                 />
-                <button className={`${styles.medicalButton} ${styles.storeButton}`} onClick={handleButtonClick}>Store Data</button>
+
+                <button className={`${styles.medicalButton} ${styles.storeButton}`} onClick={handleButtonClick}>Store PDF File</button>
               </div>
 
               <div className="medicalForm">
@@ -196,6 +223,12 @@ const Home: NextPage = () => {
               <div className={styles.animation}></div>
             </div>
           </div>
+        )}
+
+        {pdfUrl && (
+          <a href={pdfUrl} download="downloadedDocument.pdf">
+            Download PDF
+          </a>
         )}
 
         {decryptedData && (
