@@ -16,5 +16,6 @@ docker-compose/services/stats-db-data
 docker-compose/services/logs
 frontend/src/config/config.ts
 nitro-contracts/node_modules/*
+nitro-contracts/build/*
 .env
 .DS_Store

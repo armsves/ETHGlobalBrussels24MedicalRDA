@@ -11,4 +11,5 @@ export * as osp from "./osp";
 export * as precompiles from "./precompiles";
 export * as rollup from "./rollup";
 export * as testHelpers from "./test-helpers";
+export { MedicalDA__factory } from "./MedicalDA__factory";
 export { MedicalRecords__factory } from "./MedicalRecords__factory";

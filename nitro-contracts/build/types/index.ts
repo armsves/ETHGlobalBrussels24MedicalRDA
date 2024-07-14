@@ -124,6 +124,8 @@ export type { IReader4844 } from "./src/libraries/IReader4844";
 export { IReader4844__factory } from "./factories/src/libraries/IReader4844__factory";
 export type { UUPSNotUpgradeable } from "./src/libraries/UUPSNotUpgradeable";
 export { UUPSNotUpgradeable__factory } from "./factories/src/libraries/UUPSNotUpgradeable__factory";
+export type { MedicalDA } from "./src/MedicalDA";
+export { MedicalDA__factory } from "./factories/src/MedicalDA__factory";
 export type { MedicalRecords } from "./src/MedicalRecords";
 export { MedicalRecords__factory } from "./factories/src/MedicalRecords__factory";
 export type { BridgeStub } from "./src/mocks/BridgeStub";

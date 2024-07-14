@@ -21,4 +21,5 @@ import type * as rollup from "./rollup";
 export type { rollup };
 import type * as testHelpers from "./test-helpers";
 export type { testHelpers };
+export type { MedicalDA } from "./MedicalDA";
 export type { MedicalRecords } from "./MedicalRecords";

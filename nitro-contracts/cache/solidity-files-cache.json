@@ -7213,6 +7213,6867 @@
       "artifacts": [
         "IERC165"
       ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/MedicalDA.sol": {
+      "lastModificationDate": 1720915251283,
+      "contentHash": "66988ef114b68b37abb17a2b06d24238",
+      "sourceName": "src/MedicalDA.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MedicalDA"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1720904360935,
+      "contentHash": "8398972af73b4e9e5ff3b31cad86234f",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1720904360958,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol": {
+      "lastModificationDate": 1720904360932,
+      "contentHash": "8ffefb755605824cf730ce4092b2f581",
+      "sourceName": "@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IBeacon.sol",
+        "../../access/Ownable.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UpgradeableBeacon"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1720904360945,
+      "contentHash": "ad714a6368ee7d43cded6bbe8af0b155",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts/proxy/beacon/IBeacon.sol": {
+      "lastModificationDate": 1720904360931,
+      "contentHash": "b6bd23bf19e90b771337037706470933",
+      "sourceName": "@openzeppelin/contracts/proxy/beacon/IBeacon.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IBeacon"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol": {
+      "lastModificationDate": 1720904360930,
+      "contentHash": "6baa887a798e95b14f34e093f117e9b2",
+      "sourceName": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../beacon/IBeacon.sol",
+        "../../interfaces/draft-IERC1822.sol",
+        "../../utils/Address.sol",
+        "../../utils/StorageSlot.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.2"
+      ],
+      "artifacts": [
+        "ERC1967Upgrade"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts/interfaces/draft-IERC1822.sol": {
+      "lastModificationDate": 1720904361085,
+      "contentHash": "2858d98e74e67987ec81b39605230b74",
+      "sourceName": "@openzeppelin/contracts/interfaces/draft-IERC1822.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1822Proxiable"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts/utils/StorageSlot.sol": {
+      "lastModificationDate": 1720904360951,
+      "contentHash": "187a01c1e4e638014509dfee3ac6faa9",
+      "sourceName": "@openzeppelin/contracts/utils/StorageSlot.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "StorageSlot"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol": {
+      "lastModificationDate": 1720904360930,
+      "contentHash": "524a6c6f00b809b1184050dcc9e131d8",
+      "sourceName": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../Proxy.sol",
+        "./ERC1967Upgrade.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1967Proxy"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts/proxy/Proxy.sol": {
+      "lastModificationDate": 1720904360929,
+      "contentHash": "64bbdea195e6365927334efd0fc13255",
+      "sourceName": "@openzeppelin/contracts/proxy/Proxy.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Proxy"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/mocks/SimpleProxy.sol": {
+      "lastModificationDate": 1720904375402,
+      "contentHash": "1928354f3ecd06e8bcd1201cbd28aa2c",
+      "sourceName": "src/mocks/SimpleProxy.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/proxy/Proxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SimpleProxy"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/libraries/AdminFallbackProxy.sol": {
+      "lastModificationDate": 1720904375449,
+      "contentHash": "ca9dbab97147ecc126a36d4c9c527927",
+      "sourceName": "src/libraries/AdminFallbackProxy.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/proxy/Proxy.sol",
+        "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol",
+        "@openzeppelin/contracts/utils/Address.sol",
+        "@openzeppelin/contracts/utils/StorageSlot.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AdminFallbackProxy",
+        "DoubleLogicERC1967Upgrade"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/rollup/RollupProxy.sol": {
+      "lastModificationDate": 1720904375474,
+      "contentHash": "0c3fe46366dc4e576cbf136a1d0f3aa9",
+      "sourceName": "src/rollup/RollupProxy.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libraries/AdminFallbackProxy.sol",
+        "./IRollupAdmin.sol",
+        "./Config.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "RollupProxy"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/rollup/IRollupAdmin.sol": {
+      "lastModificationDate": 1720904375476,
+      "contentHash": "d52b513079c8903d1c7053d460038f6a",
+      "sourceName": "src/rollup/IRollupAdmin.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IRollupCore.sol",
+        "../bridge/ISequencerInbox.sol",
+        "../bridge/IOutbox.sol",
+        "../bridge/IOwnable.sol",
+        "./Config.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IRollupAdmin"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/rollup/Config.sol": {
+      "lastModificationDate": 1720904375481,
+      "contentHash": "9a30970ba317449e45027d0a542e314b",
+      "sourceName": "src/rollup/Config.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../state/GlobalState.sol",
+        "../state/Machine.sol",
+        "../bridge/ISequencerInbox.sol",
+        "../bridge/IBridge.sol",
+        "../bridge/IOutbox.sol",
+        "../bridge/IInboxBase.sol",
+        "./IRollupEventInbox.sol",
+        "./IRollupLogic.sol",
+        "../challenge/IChallengeManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/bridge/ISequencerInbox.sol": {
+      "lastModificationDate": 1720904375436,
+      "contentHash": "9c927cd6804a4655512928258bc11c93",
+      "sourceName": "src/bridge/ISequencerInbox.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../data-availability/IAvailDABridge.sol",
+        "../data-availability/MerkleProofInput.sol",
+        "../libraries/IGasRefunder.sol",
+        "./IDelayedMessageProvider.sol",
+        "./IBridge.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.9 <0.9.0"
+      ],
+      "artifacts": [
+        "ISequencerInbox"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/bridge/IOutbox.sol": {
+      "lastModificationDate": 1720904375434,
+      "contentHash": "0a98caaa5537b46faca3d53316717639",
+      "sourceName": "src/bridge/IOutbox.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IBridge.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.9 <0.9.0"
+      ],
+      "artifacts": [
+        "IOutbox"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/bridge/IOwnable.sol": {
+      "lastModificationDate": 1720904375435,
+      "contentHash": "f137765d70da47bbc5147eecfbd48a63",
+      "sourceName": "src/bridge/IOwnable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "IOwnable"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/rollup/IRollupCore.sol": {
+      "lastModificationDate": 1720904375476,
+      "contentHash": "c4c01f61241c3ac66e3d223c28172cc3",
+      "sourceName": "src/rollup/IRollupCore.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Node.sol",
+        "../bridge/IBridge.sol",
+        "../bridge/IOutbox.sol",
+        "../bridge/IInboxBase.sol",
+        "./IRollupEventInbox.sol",
+        "../challenge/IChallengeManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IRollupCore"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/data-availability/IAvailDABridge.sol": {
+      "lastModificationDate": 1720904375422,
+      "contentHash": "eca4f4da43143afd617f87e447481255",
+      "sourceName": "src/data-availability/IAvailDABridge.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./MerkleProofInput.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAvailDABridge"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/data-availability/MerkleProofInput.sol": {
+      "lastModificationDate": 1720904375421,
+      "contentHash": "618466f36772bc68f246eebf6573959a",
+      "sourceName": "src/data-availability/MerkleProofInput.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/libraries/IGasRefunder.sol": {
+      "lastModificationDate": 1720904375457,
+      "contentHash": "40298e144299f625ac6774ea20321073",
+      "sourceName": "src/libraries/IGasRefunder.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.9 <0.9.0"
+      ],
+      "artifacts": [
+        "IGasRefunder"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/bridge/IDelayedMessageProvider.sol": {
+      "lastModificationDate": 1720904375437,
+      "contentHash": "0aa36f70a29a20adaa1dad2cc35717ce",
+      "sourceName": "src/bridge/IDelayedMessageProvider.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.9 <0.9.0"
+      ],
+      "artifacts": [
+        "IDelayedMessageProvider"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/bridge/IBridge.sol": {
+      "lastModificationDate": 1720904375444,
+      "contentHash": "be12e86d4cb1b1447b5c6cc8dc7e40b9",
+      "sourceName": "src/bridge/IBridge.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IOwnable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.9 <0.9.0"
+      ],
+      "artifacts": [
+        "IBridge"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/bridge/IInboxBase.sol": {
+      "lastModificationDate": 1720904375441,
+      "contentHash": "c2b857e563936719109dcb4ca99c3e47",
+      "sourceName": "src/bridge/IInboxBase.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IBridge.sol",
+        "./IDelayedMessageProvider.sol",
+        "./ISequencerInbox.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.9 <0.9.0"
+      ],
+      "artifacts": [
+        "IInboxBase"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/challenge/IChallengeManager.sol": {
+      "lastModificationDate": 1720904375496,
+      "contentHash": "cb91978637377743a65eb2e5c3247132",
+      "sourceName": "src/challenge/IChallengeManager.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../state/Machine.sol",
+        "../bridge/IBridge.sol",
+        "../bridge/ISequencerInbox.sol",
+        "../osp/IOneStepProofEntry.sol",
+        "./IChallengeResultReceiver.sol",
+        "./ChallengeLib.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IChallengeManager"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/rollup/Node.sol": {
+      "lastModificationDate": 1720904375484,
+      "contentHash": "5d50c9f9df34847b01636549df1f7c1d",
+      "sourceName": "src/rollup/Node.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../state/GlobalState.sol",
+        "../state/Machine.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "NodeLib"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/rollup/IRollupEventInbox.sol": {
+      "lastModificationDate": 1720904375483,
+      "contentHash": "c3f43464f1b1bea369b9bd7709fdf404",
+      "sourceName": "src/rollup/IRollupEventInbox.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../bridge/IBridge.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IRollupEventInbox"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/state/Machine.sol": {
+      "lastModificationDate": 1720904375462,
+      "contentHash": "dddc02a416abfe4f2c112c92753aa2e8",
+      "sourceName": "src/state/Machine.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ValueStack.sol",
+        "./Instructions.sol",
+        "./StackFrame.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MachineLib"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/osp/IOneStepProofEntry.sol": {
+      "lastModificationDate": 1720904375419,
+      "contentHash": "8deccd2721d30ffebd28526175a6e793",
+      "sourceName": "src/osp/IOneStepProofEntry.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IOneStepProver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IOneStepProofEntry",
+        "OneStepProofEntryLib"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/challenge/IChallengeResultReceiver.sol": {
+      "lastModificationDate": 1720904375495,
+      "contentHash": "d62a198107492284e940f8fd2c5499d4",
+      "sourceName": "src/challenge/IChallengeResultReceiver.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IChallengeResultReceiver"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/challenge/ChallengeLib.sol": {
+      "lastModificationDate": 1720904375497,
+      "contentHash": "95300f19e627031a42b1474c0d1603bf",
+      "sourceName": "src/challenge/ChallengeLib.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../state/Machine.sol",
+        "../state/GlobalState.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ChallengeLib"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/state/ValueStack.sol": {
+      "lastModificationDate": 1720904375461,
+      "contentHash": "271def0fff73d96fa50c494510b5d396",
+      "sourceName": "src/state/ValueStack.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Value.sol",
+        "./ValueArray.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ValueStackLib"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/state/Instructions.sol": {
+      "lastModificationDate": 1720904375460,
+      "contentHash": "9bf12fd8ae7854550168540673e8893d",
+      "sourceName": "src/state/Instructions.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Instructions"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/state/StackFrame.sol": {
+      "lastModificationDate": 1720904375471,
+      "contentHash": "d30fd605bdf7fd50fd9e74e516010020",
+      "sourceName": "src/state/StackFrame.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Value.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "StackFrameLib"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/state/Value.sol": {
+      "lastModificationDate": 1720904375465,
+      "contentHash": "83e4ca30e5810da4c4a89628c587002c",
+      "sourceName": "src/state/Value.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ValueLib"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/state/ValueArray.sol": {
+      "lastModificationDate": 1720904375472,
+      "contentHash": "5ab74a7e97786f915352470dee78d094",
+      "sourceName": "src/state/ValueArray.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Value.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ValueArrayLib"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/osp/IOneStepProver.sol": {
+      "lastModificationDate": 1720904375415,
+      "contentHash": "e311a98561f9ff7fe792285e44df25e4",
+      "sourceName": "src/osp/IOneStepProver.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../state/Machine.sol",
+        "../state/Module.sol",
+        "../state/Instructions.sol",
+        "../state/GlobalState.sol",
+        "../bridge/ISequencerInbox.sol",
+        "../bridge/IBridge.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IOneStepProver"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/state/Module.sol": {
+      "lastModificationDate": 1720904375470,
+      "contentHash": "d4bbbd2a8439a1b2b6bb3a5c3ea22038",
+      "sourceName": "src/state/Module.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ModuleMemoryCompact.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ModuleLib"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/state/GlobalState.sol": {
+      "lastModificationDate": 1720904375469,
+      "contentHash": "ed36f919d4d3b9f91c86369d6bdb072a",
+      "sourceName": "src/state/GlobalState.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GlobalStateLib"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/state/ModuleMemoryCompact.sol": {
+      "lastModificationDate": 1720904375467,
+      "contentHash": "5a0134efb509968a50f0702ab10ccc9e",
+      "sourceName": "src/state/ModuleMemoryCompact.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ModuleMemoryCompactLib"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/rollup/IRollupLogic.sol": {
+      "lastModificationDate": 1720904375479,
+      "contentHash": "4ecfcdc98fd46411b66a58a63654cd31",
+      "sourceName": "src/rollup/IRollupLogic.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IRollupCore.sol",
+        "../bridge/ISequencerInbox.sol",
+        "../bridge/IOutbox.sol",
+        "../bridge/IOwnable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IRollupUser",
+        "IRollupUserAbs",
+        "IRollupUserERC20"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/rollup/RollupCreator.sol": {
+      "lastModificationDate": 1720904375488,
+      "contentHash": "6ba94b47d7b4abcd97828b372cb5ff0c",
+      "sourceName": "src/rollup/RollupCreator.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./RollupProxy.sol",
+        "./IRollupAdmin.sol",
+        "./BridgeCreator.sol",
+        "@offchainlabs/upgrade-executor/src/IUpgradeExecutor.sol",
+        "@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol",
+        "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./DeployHelper.sol",
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "RollupCreator"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/rollup/BridgeCreator.sol": {
+      "lastModificationDate": 1720904375488,
+      "contentHash": "d3577db0382107ad42b0729b34390ef1",
+      "sourceName": "src/rollup/BridgeCreator.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../bridge/Bridge.sol",
+        "../bridge/SequencerInbox.sol",
+        "../bridge/Inbox.sol",
+        "../bridge/Outbox.sol",
+        "./RollupEventInbox.sol",
+        "../bridge/ERC20Bridge.sol",
+        "../bridge/ERC20Inbox.sol",
+        "../rollup/ERC20RollupEventInbox.sol",
+        "../bridge/ERC20Outbox.sol",
+        "../bridge/IBridge.sol",
+        "../data-availability/IAvailDABridge.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BridgeCreator"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/rollup/DeployHelper.sol": {
+      "lastModificationDate": 1720904375475,
+      "contentHash": "44b7cbbb6a5f6e3ca5177c974de9394b",
+      "sourceName": "src/rollup/DeployHelper.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../bridge/IInbox.sol",
+        "../bridge/IInboxBase.sol",
+        "../bridge/IERC20Bridge.sol",
+        "../bridge/ERC20Inbox.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "DeployHelper"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@offchainlabs/upgrade-executor/src/IUpgradeExecutor.sol": {
+      "lastModificationDate": 1720904359052,
+      "contentHash": "d2228cfe0adbad08c7ec43ee8495bf13",
+      "sourceName": "@offchainlabs/upgrade-executor/src/IUpgradeExecutor.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2 <0.9.0"
+      ],
+      "artifacts": [
+        "IUpgradeExecutor"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol": {
+      "lastModificationDate": 1720904360926,
+      "contentHash": "433af24ebe64e49e21ea173b3744af6c",
+      "sourceName": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ERC1967/ERC1967Proxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TransparentUpgradeableProxy"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol": {
+      "lastModificationDate": 1720904360925,
+      "contentHash": "a947492251ac15d6bfd899c9fdb4d82b",
+      "sourceName": "@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./TransparentUpgradeableProxy.sol",
+        "../../access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ProxyAdmin"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": {
+      "lastModificationDate": 1720904360885,
+      "contentHash": "76814c83c32552ed2b521c816b4d801a",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol",
+        "../../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/bridge/Bridge.sol": {
+      "lastModificationDate": 1720904375443,
+      "contentHash": "c5c79f9a61d5403b7f5969735332bb1a",
+      "sourceName": "src/bridge/Bridge.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+        "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+        "./AbsBridge.sol",
+        "./IEthBridge.sol",
+        "./Messages.sol",
+        "../libraries/DelegateCallAware.sol",
+        "../libraries/MessageTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Bridge"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/bridge/SequencerInbox.sol": {
+      "lastModificationDate": 1720904375439,
+      "contentHash": "ab966ccb19de42107818f3bf62a1f8a1",
+      "sourceName": "src/bridge/SequencerInbox.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libraries/Error.sol",
+        "./IBridge.sol",
+        "./IInboxBase.sol",
+        "./ISequencerInbox.sol",
+        "../rollup/IRollupLogic.sol",
+        "./Messages.sol",
+        "../precompiles/ArbGasInfo.sol",
+        "../precompiles/ArbSys.sol",
+        "../libraries/IReader4844.sol",
+        "../data-availability/IAvailDABridge.sol",
+        "../data-availability/MerkleProofInput.sol",
+        "../data-availability/BlobPointer.sol",
+        "../libraries/MessageTypes.sol",
+        "../libraries/DelegateCallAware.sol",
+        "../libraries/IGasRefunder.sol",
+        "../libraries/GasRefundEnabled.sol",
+        "../libraries/ArbitrumChecker.sol",
+        "./IERC20Bridge.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SequencerInbox"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/bridge/Inbox.sol": {
+      "lastModificationDate": 1720904375443,
+      "contentHash": "e13abeab83bae194396119437b0575ab",
+      "sourceName": "src/bridge/Inbox.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libraries/Error.sol",
+        "./AbsInbox.sol",
+        "./IInbox.sol",
+        "./IBridge.sol",
+        "./IEthBridge.sol",
+        "../libraries/AddressAliasHelper.sol",
+        "../libraries/MessageTypes.sol",
+        "../precompiles/ArbSys.sol",
+        "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Inbox"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/bridge/Outbox.sol": {
+      "lastModificationDate": 1720904375436,
+      "contentHash": "caa5bd4daae03d58194308f9b3a82b4d",
+      "sourceName": "src/bridge/Outbox.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./AbsOutbox.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Outbox"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/bridge/ERC20Bridge.sol": {
+      "lastModificationDate": 1720904375445,
+      "contentHash": "188375c871d25f8952e6880d99e7eed4",
+      "sourceName": "src/bridge/ERC20Bridge.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./AbsBridge.sol",
+        "./IERC20Bridge.sol",
+        "../libraries/AddressAliasHelper.sol",
+        "../libraries/Error.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "ERC20Bridge"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/bridge/ERC20Inbox.sol": {
+      "lastModificationDate": 1720904375438,
+      "contentHash": "be3fa96ca9ea66a0a78e2a6aef9f691d",
+      "sourceName": "src/bridge/ERC20Inbox.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./AbsInbox.sol",
+        "./IERC20Inbox.sol",
+        "./IERC20Bridge.sol",
+        "../libraries/AddressAliasHelper.sol",
+        "../libraries/MessageTypes.sol",
+        "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "ERC20Inbox"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/rollup/ERC20RollupEventInbox.sol": {
+      "lastModificationDate": 1720904375479,
+      "contentHash": "713967918618f96412ed5657e634cf69",
+      "sourceName": "src/rollup/ERC20RollupEventInbox.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./AbsRollupEventInbox.sol",
+        "../bridge/IERC20Bridge.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20RollupEventInbox"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/bridge/ERC20Outbox.sol": {
+      "lastModificationDate": 1720904375446,
+      "contentHash": "f7bc262742b1d62aca98b65b291ba0bd",
+      "sourceName": "src/bridge/ERC20Outbox.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./AbsOutbox.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "ERC20Outbox"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/rollup/RollupEventInbox.sol": {
+      "lastModificationDate": 1720904375477,
+      "contentHash": "84a0d685857b11f472f740c64c6e00b1",
+      "sourceName": "src/rollup/RollupEventInbox.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./AbsRollupEventInbox.sol",
+        "../bridge/IEthBridge.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "RollupEventInbox"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/libraries/DelegateCallAware.sol": {
+      "lastModificationDate": 1720904375457,
+      "contentHash": "e4ae621eba94fc4f54598fc6814cc478",
+      "sourceName": "src/libraries/DelegateCallAware.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Error.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "DelegateCallAware"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/libraries/MessageTypes.sol": {
+      "lastModificationDate": 1720904375450,
+      "contentHash": "7fbb9beb00dc41e57d11af071ef9dea3",
+      "sourceName": "src/libraries/MessageTypes.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": []
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/bridge/Messages.sol": {
+      "lastModificationDate": 1720904375447,
+      "contentHash": "336f226c8831848ccd5e82f54abd5a92",
+      "sourceName": "src/bridge/Messages.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Messages"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/bridge/AbsBridge.sol": {
+      "lastModificationDate": 1720904375440,
+      "contentHash": "3be05d3544723650eabc56790ec0d2ee",
+      "sourceName": "src/bridge/AbsBridge.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+        "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+        "../libraries/Error.sol",
+        "./IBridge.sol",
+        "./Messages.sol",
+        "../libraries/DelegateCallAware.sol",
+        "../libraries/MessageTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "AbsBridge"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/bridge/IEthBridge.sol": {
+      "lastModificationDate": 1720904375438,
+      "contentHash": "fbbe8a2ebc01bc90bac7b41aad74e475",
+      "sourceName": "src/bridge/IEthBridge.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IOwnable.sol",
+        "./IBridge.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.9 <0.9.0"
+      ],
+      "artifacts": [
+        "IEthBridge"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol": {
+      "lastModificationDate": 1720904361177,
+      "contentHash": "b70d2e0552ab1f44f7e44b5f8379c358",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "AddressUpgradeable"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol": {
+      "lastModificationDate": 1720904361139,
+      "contentHash": "49c8ad51a559f6dda13d35874f7dfdb9",
+      "sourceName": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../utils/AddressUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/libraries/Error.sol": {
+      "lastModificationDate": 1720904375455,
+      "contentHash": "8ce9dcb36089f0c88e9ce0f01af5bcac",
+      "sourceName": "src/libraries/Error.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": []
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/precompiles/ArbGasInfo.sol": {
+      "lastModificationDate": 1720904375425,
+      "contentHash": "7ddbfca47890690c0a64799a624552f0",
+      "sourceName": "src/precompiles/ArbGasInfo.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "ArbGasInfo"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/precompiles/ArbSys.sol": {
+      "lastModificationDate": 1720904375428,
+      "contentHash": "e00a59b093f406c74319fde7a2305f6b",
+      "sourceName": "src/precompiles/ArbSys.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "ArbSys"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/libraries/IReader4844.sol": {
+      "lastModificationDate": 1720904375452,
+      "contentHash": "5bfcc012670d926a7cf1b297cde9fb9b",
+      "sourceName": "src/libraries/IReader4844.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.9 <0.9.0"
+      ],
+      "artifacts": [
+        "IReader4844"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/data-availability/BlobPointer.sol": {
+      "lastModificationDate": 1720904375423,
+      "contentHash": "c48126bcdb1b0bc4a67d9ceb40338e98",
+      "sourceName": "src/data-availability/BlobPointer.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./MerkleProofInput.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/libraries/GasRefundEnabled.sol": {
+      "lastModificationDate": 1720904375450,
+      "contentHash": "63dab55bb8c33db8c671ac359a7d5796",
+      "sourceName": "src/libraries/GasRefundEnabled.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IReader4844.sol",
+        "./IGasRefunder.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GasRefundEnabled"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/libraries/ArbitrumChecker.sol": {
+      "lastModificationDate": 1720904375454,
+      "contentHash": "b6c296e7be2df90cad5255e622ca05d9",
+      "sourceName": "src/libraries/ArbitrumChecker.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../precompiles/ArbSys.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ArbitrumChecker"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/bridge/IERC20Bridge.sol": {
+      "lastModificationDate": 1720904375446,
+      "contentHash": "cf489e8ca45c3d177479c00b108e3413",
+      "sourceName": "src/bridge/IERC20Bridge.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IOwnable.sol",
+        "./IBridge.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.9 <0.9.0"
+      ],
+      "artifacts": [
+        "IERC20Bridge"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/libraries/AddressAliasHelper.sol": {
+      "lastModificationDate": 1720904375452,
+      "contentHash": "9597460aef81d8680eec9a2fb60b65cc",
+      "sourceName": "src/libraries/AddressAliasHelper.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AddressAliasHelper"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/bridge/AbsInbox.sol": {
+      "lastModificationDate": 1720904375448,
+      "contentHash": "dd65d3e9cf1d7d07ac20e24b9f1abfae",
+      "sourceName": "src/bridge/AbsInbox.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libraries/Error.sol",
+        "./IInboxBase.sol",
+        "./ISequencerInbox.sol",
+        "./IBridge.sol",
+        "../libraries/AddressAliasHelper.sol",
+        "../libraries/DelegateCallAware.sol",
+        "../libraries/MessageTypes.sol",
+        "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/utils/StorageSlotUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "AbsInbox"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/bridge/IInbox.sol": {
+      "lastModificationDate": 1720904375441,
+      "contentHash": "fd78e9c26eb55f7f6f05a948c56388ec",
+      "sourceName": "src/bridge/IInbox.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IBridge.sol",
+        "./IInboxBase.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.9 <0.9.0"
+      ],
+      "artifacts": [
+        "IInbox"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts-upgradeable/utils/StorageSlotUpgradeable.sol": {
+      "lastModificationDate": 1720904361178,
+      "contentHash": "fffe21caed735dbc8a621e3844f0adb1",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/StorageSlotUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "StorageSlotUpgradeable"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol": {
+      "lastModificationDate": 1720904361147,
+      "contentHash": "f5233d9eeebd5f0b4633650939e72426",
+      "sourceName": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../utils/ContextUpgradeable.sol",
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PausableUpgradeable"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol": {
+      "lastModificationDate": 1720904361153,
+      "contentHash": "6200b84950eb05b4a92a39fd1d6e0f9b",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ContextUpgradeable"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/bridge/AbsOutbox.sol": {
+      "lastModificationDate": 1720904375442,
+      "contentHash": "f4bfa46d71d90d3547497a2cf3f70b82",
+      "sourceName": "src/bridge/AbsOutbox.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libraries/Error.sol",
+        "./IBridge.sol",
+        "./IOutbox.sol",
+        "../libraries/MerkleLib.sol",
+        "../libraries/DelegateCallAware.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "AbsOutbox"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/libraries/MerkleLib.sol": {
+      "lastModificationDate": 1720904375455,
+      "contentHash": "abc9253a99079c48203190bcc458be86",
+      "sourceName": "src/libraries/MerkleLib.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Error.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "MerkleLib"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1720904360883,
+      "contentHash": "a44d1a099633876550ad2476b21bafbe",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/bridge/IERC20Inbox.sol": {
+      "lastModificationDate": 1720904375447,
+      "contentHash": "a8bdc42b6aecaba370e7055eaf472d7b",
+      "sourceName": "src/bridge/IERC20Inbox.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IInboxBase.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.9 <0.9.0"
+      ],
+      "artifacts": [
+        "IERC20Inbox"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1720904360884,
+      "contentHash": "bab063ddd80e9cc9e313361fef7ef07f",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./extensions/IERC20Metadata.sol",
+        "../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+      "lastModificationDate": 1720904360888,
+      "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/rollup/AbsRollupEventInbox.sol": {
+      "lastModificationDate": 1720904375485,
+      "contentHash": "25dada74f4970815f562e2fe6ada6836",
+      "sourceName": "src/rollup/AbsRollupEventInbox.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IRollupEventInbox.sol",
+        "../bridge/IBridge.sol",
+        "../bridge/IEthBridge.sol",
+        "../precompiles/ArbGasInfo.sol",
+        "../libraries/ArbitrumChecker.sol",
+        "../bridge/IDelayedMessageProvider.sol",
+        "../libraries/DelegateCallAware.sol",
+        "../libraries/MessageTypes.sol",
+        "../libraries/Error.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AbsRollupEventInbox"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/rollup/ValidatorWallet.sol": {
+      "lastModificationDate": 1720904375478,
+      "contentHash": "7e157100dce3292d02ba960582581ab2",
+      "sourceName": "src/rollup/ValidatorWallet.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../challenge/IChallengeManager.sol",
+        "../libraries/DelegateCallAware.sol",
+        "../libraries/IGasRefunder.sol",
+        "../libraries/GasRefundEnabled.sol",
+        "@openzeppelin/contracts/utils/Address.sol",
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ValidatorWallet"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol": {
+      "lastModificationDate": 1720904361145,
+      "contentHash": "11b77de3cb69dfc6b342ec87bd09cbdd",
+      "sourceName": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../utils/ContextUpgradeable.sol",
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OwnableUpgradeable"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/rollup/ValidatorWalletCreator.sol": {
+      "lastModificationDate": 1720904375487,
+      "contentHash": "e2fc668bc01b8ccae222763b16707b8a",
+      "sourceName": "src/rollup/ValidatorWalletCreator.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol",
+        "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./ValidatorWallet.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ValidatorWalletCreator"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/mocks/BridgeUnproxied.sol": {
+      "lastModificationDate": 1720904375406,
+      "contentHash": "35b1462fa16fafb47dcb42446382c4a7",
+      "sourceName": "src/mocks/BridgeUnproxied.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./InboxStub.sol",
+        "../libraries/Error.sol",
+        "../bridge/Bridge.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BridgeUnproxied"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/mocks/InboxStub.sol": {
+      "lastModificationDate": 1720904375402,
+      "contentHash": "16fff0e8c1822f1e4a700137e65d72f1",
+      "sourceName": "src/mocks/InboxStub.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../bridge/IInboxBase.sol",
+        "../bridge/IInbox.sol",
+        "../bridge/IBridge.sol",
+        "../bridge/IEthBridge.sol",
+        "../bridge/Messages.sol",
+        "./BridgeStub.sol",
+        "../libraries/MessageTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "InboxStub"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/mocks/BridgeStub.sol": {
+      "lastModificationDate": 1720904375401,
+      "contentHash": "7f192d6492a206b7373aa1b07c089bc7",
+      "sourceName": "src/mocks/BridgeStub.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./InboxStub.sol",
+        "../libraries/Error.sol",
+        "../bridge/IBridge.sol",
+        "../bridge/IEthBridge.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BridgeStub"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/mocks/SequencerInboxStub.sol": {
+      "lastModificationDate": 1720904375405,
+      "contentHash": "eae7afaa64db336d08b266bed7cf7832",
+      "sourceName": "src/mocks/SequencerInboxStub.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../bridge/SequencerInbox.sol",
+        "../bridge/IEthBridge.sol",
+        "../libraries/MessageTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SequencerInboxStub"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/test-helpers/BridgeTester.sol": {
+      "lastModificationDate": 1720904375493,
+      "contentHash": "dfc89a26cb62600e4b1506620553471a",
+      "sourceName": "src/test-helpers/BridgeTester.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+        "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+        "../libraries/Error.sol",
+        "../bridge/IBridge.sol",
+        "../bridge/IEthBridge.sol",
+        "../bridge/Messages.sol",
+        "../libraries/DelegateCallAware.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "BridgeTester"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol": {
+      "lastModificationDate": 1720904361157,
+      "contentHash": "5f2d8b81c0ff5bd2047b4846c20b998d",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC165Upgradeable.sol",
+        "../../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165Upgradeable"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol": {
+      "lastModificationDate": 1720904361156,
+      "contentHash": "d6ecf203a5e72c845be9bbf2f304a289",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165Upgradeable"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol": {
+      "lastModificationDate": 1720904361145,
+      "contentHash": "d97b37e4d879ceec2dbf165d6dc4a931",
+      "sourceName": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IAccessControlUpgradeable.sol",
+        "../utils/ContextUpgradeable.sol",
+        "../utils/StringsUpgradeable.sol",
+        "../utils/introspection/ERC165Upgradeable.sol",
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControlUpgradeable"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol": {
+      "lastModificationDate": 1720904361170,
+      "contentHash": "f60b5fcbc57911b0fbc7a31a110f90bc",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "StringsUpgradeable"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts-upgradeable/access/IAccessControlUpgradeable.sol": {
+      "lastModificationDate": 1720904361143,
+      "contentHash": "21b43d1337ebc77c11da3cbe3fd65316",
+      "sourceName": "@openzeppelin/contracts-upgradeable/access/IAccessControlUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAccessControlUpgradeable"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/rollup/RollupCore.sol": {
+      "lastModificationDate": 1720904375486,
+      "contentHash": "1a7684980ba3519ceafe00acbb88b636",
+      "sourceName": "src/rollup/RollupCore.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol",
+        "./Node.sol",
+        "./RollupLib.sol",
+        "./IRollupEventInbox.sol",
+        "./IRollupCore.sol",
+        "../challenge/IChallengeManager.sol",
+        "../bridge/ISequencerInbox.sol",
+        "../bridge/IBridge.sol",
+        "../bridge/IOutbox.sol",
+        "../precompiles/ArbSys.sol",
+        "../libraries/ArbitrumChecker.sol",
+        "../libraries/Constants.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "RollupCore"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/libraries/Constants.sol": {
+      "lastModificationDate": 1720904375454,
+      "contentHash": "b9c416c23ae387b5860fafd4c2db9c0c",
+      "sourceName": "src/libraries/Constants.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": []
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/rollup/RollupLib.sol": {
+      "lastModificationDate": 1720904375482,
+      "contentHash": "f88a1f4dc838d339afce4606d5716062",
+      "sourceName": "src/rollup/RollupLib.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../challenge/IChallengeManager.sol",
+        "../challenge/ChallengeLib.sol",
+        "../state/GlobalState.sol",
+        "../bridge/ISequencerInbox.sol",
+        "../bridge/IBridge.sol",
+        "../bridge/IOutbox.sol",
+        "../bridge/IInboxBase.sol",
+        "./Node.sol",
+        "./IRollupEventInbox.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "RollupLib"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/rollup/RollupUserLogic.sol": {
+      "lastModificationDate": 1720904375487,
+      "contentHash": "a6e104f425e386257a99b5ce614042b2",
+      "sourceName": "src/rollup/RollupUserLogic.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
+        "./IRollupLogic.sol",
+        "../libraries/UUPSNotUpgradeable.sol",
+        "./RollupCore.sol",
+        "./IRollupLogic.sol",
+        "../libraries/Constants.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AbsRollupUserLogic",
+        "ERC20RollupUserLogic",
+        "RollupUserLogic"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/libraries/UUPSNotUpgradeable.sol": {
+      "lastModificationDate": 1720904375453,
+      "contentHash": "a8645ca67a057b84dd728be3358abb4a",
+      "sourceName": "src/libraries/UUPSNotUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/interfaces/draft-IERC1822.sol",
+        "./AdminFallbackProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UUPSNotUpgradeable"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol": {
+      "lastModificationDate": 1720904361111,
+      "contentHash": "42737d1d02061ade4f91d1e08b45f835",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Upgradeable"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/rollup/ValidatorUtils.sol": {
+      "lastModificationDate": 1720904375480,
+      "contentHash": "c1af5b3b14e999698754b41b21037e46",
+      "sourceName": "src/rollup/ValidatorUtils.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../rollup/IRollupCore.sol",
+        "../challenge/IChallengeManager.sol",
+        "./IRollupLogic.sol",
+        "../libraries/Constants.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ValidatorUtils"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/rollup/RollupAdminLogic.sol": {
+      "lastModificationDate": 1720904375481,
+      "contentHash": "bba6dcd066f9d6d7675b8da66d5df10c",
+      "sourceName": "src/rollup/RollupAdminLogic.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IRollupAdmin.sol",
+        "./IRollupLogic.sol",
+        "./RollupCore.sol",
+        "../bridge/IOutbox.sol",
+        "../bridge/ISequencerInbox.sol",
+        "../challenge/IChallengeManager.sol",
+        "../libraries/DoubleLogicUUPSUpgradeable.sol",
+        "@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol",
+        "../libraries/Constants.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "RollupAdminLogic"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/libraries/DoubleLogicUUPSUpgradeable.sol": {
+      "lastModificationDate": 1720904375451,
+      "contentHash": "627dd9e5c29189572d136fd0b83ec6b9",
+      "sourceName": "src/libraries/DoubleLogicUUPSUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./AdminFallbackProxy.sol",
+        "@openzeppelin/contracts/proxy/utils/UUPSUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "DoubleLogicUUPSUpgradeable"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts/proxy/utils/UUPSUpgradeable.sol": {
+      "lastModificationDate": 1720904360928,
+      "contentHash": "5e95368c9b763cfa31ba0fe1309acc60",
+      "sourceName": "@openzeppelin/contracts/proxy/utils/UUPSUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/draft-IERC1822.sol",
+        "../ERC1967/ERC1967Upgrade.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UUPSUpgradeable"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/test-helpers/OutboxWithoutOptTester.sol": {
+      "lastModificationDate": 1720904375494,
+      "contentHash": "d96f8d4cf352332ad03cffdfe1a3e88a",
+      "sourceName": "src/test-helpers/OutboxWithoutOptTester.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libraries/Error.sol",
+        "../bridge/IBridge.sol",
+        "../bridge/IOutbox.sol",
+        "../libraries/MerkleLib.sol",
+        "../libraries/DelegateCallAware.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "OutboxWithoutOptTester"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/test-helpers/InterfaceCompatibilityTester.sol": {
+      "lastModificationDate": 1720904375491,
+      "contentHash": "cce14970ec7e2e5599d31e3c25e26100",
+      "sourceName": "src/test-helpers/InterfaceCompatibilityTester.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../bridge/IBridge.sol",
+        "../bridge/IOutbox.sol",
+        "../bridge/IInboxBase.sol",
+        "../bridge/ISequencerInbox.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.9 <0.9.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/osp/OneStepProverMemory.sol": {
+      "lastModificationDate": 1720904375412,
+      "contentHash": "aa21f1a96d265b5533f6c736f07f8e7a",
+      "sourceName": "src/osp/OneStepProverMemory.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../state/Value.sol",
+        "../state/Machine.sol",
+        "../state/Deserialize.sol",
+        "../state/ModuleMemory.sol",
+        "./IOneStepProver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OneStepProverMemory"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/state/Deserialize.sol": {
+      "lastModificationDate": 1720904375463,
+      "contentHash": "73e70451a4499c92de14c979fa320088",
+      "sourceName": "src/state/Deserialize.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Value.sol",
+        "./ValueStack.sol",
+        "./Machine.sol",
+        "./Instructions.sol",
+        "./StackFrame.sol",
+        "./MerkleProof.sol",
+        "./ModuleMemoryCompact.sol",
+        "./Module.sol",
+        "./GlobalState.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Deserialize"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/state/ModuleMemory.sol": {
+      "lastModificationDate": 1720904375466,
+      "contentHash": "1d8aa80a4bd2223d42f0d7a49771f8a0",
+      "sourceName": "src/state/ModuleMemory.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./MerkleProof.sol",
+        "./Deserialize.sol",
+        "./ModuleMemoryCompact.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ModuleMemoryLib"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/state/MerkleProof.sol": {
+      "lastModificationDate": 1720904375468,
+      "contentHash": "e7c43add740cb14482637d1220d9c17e",
+      "sourceName": "src/state/MerkleProof.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Value.sol",
+        "./Instructions.sol",
+        "./Module.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MerkleProofLib"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/test-helpers/ValueArrayTester.sol": {
+      "lastModificationDate": 1720904375490,
+      "contentHash": "9c731fddb9bda8551c844a19f024d4b7",
+      "sourceName": "src/test-helpers/ValueArrayTester.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../state/ValueArray.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ValueArrayTester"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/test-helpers/MessageTester.sol": {
+      "lastModificationDate": 1720904375489,
+      "contentHash": "02224601cbc4f00d888bf96a21235554",
+      "sourceName": "src/test-helpers/MessageTester.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../bridge/Messages.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MessageTester"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/osp/OneStepProverHostIo.sol": {
+      "lastModificationDate": 1720904375413,
+      "contentHash": "b70ce5e2641cc788e111417feb5dd327",
+      "sourceName": "src/osp/OneStepProverHostIo.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../state/Value.sol",
+        "../state/Machine.sol",
+        "../state/Deserialize.sol",
+        "../state/ModuleMemory.sol",
+        "./IOneStepProver.sol",
+        "../bridge/Messages.sol",
+        "../bridge/IBridge.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OneStepProverHostIo"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/mocks/Simple.sol": {
+      "lastModificationDate": 1720904375405,
+      "contentHash": "fda4f772a99595b4165d5c3dec489bd7",
+      "sourceName": "src/mocks/Simple.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../bridge/ISequencerInbox.sol",
+        "../precompiles/ArbRetryableTx.sol",
+        "../precompiles/ArbSys.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Simple"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/precompiles/ArbRetryableTx.sol": {
+      "lastModificationDate": 1720904375433,
+      "contentHash": "bd5a6057a93a597c536543b62451b25f",
+      "sourceName": "src/precompiles/ArbRetryableTx.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "ArbRetryableTx"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/bridge/GasRefunder.sol": {
+      "lastModificationDate": 1720904375445,
+      "contentHash": "88ef81e478c1e8ff1a43e04cc553af57",
+      "sourceName": "src/bridge/GasRefunder.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libraries/IGasRefunder.sol",
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.7"
+      ],
+      "artifacts": [
+        "GasRefunder"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/challenge/ChallengeManager.sol": {
+      "lastModificationDate": 1720904375497,
+      "contentHash": "843ebfc6ed073d1afde46549fb440972",
+      "sourceName": "src/challenge/ChallengeManager.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libraries/DelegateCallAware.sol",
+        "../osp/IOneStepProofEntry.sol",
+        "../state/GlobalState.sol",
+        "./IChallengeResultReceiver.sol",
+        "./ChallengeLib.sol",
+        "./IChallengeManager.sol",
+        "../libraries/Constants.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ChallengeManager"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/mocks/TimedOutChallengeManager.sol": {
+      "lastModificationDate": 1720904375407,
+      "contentHash": "4288247db0ded39e841673060d56a143",
+      "sourceName": "src/mocks/TimedOutChallengeManager.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../challenge/ChallengeManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TimedOutChallengeManager"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/mocks/SingleExecutionChallenge.sol": {
+      "lastModificationDate": 1720904375400,
+      "contentHash": "9bb7065c56d67ab8a7cc8b3c773a0833",
+      "sourceName": "src/mocks/SingleExecutionChallenge.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../challenge/ChallengeManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SingleExecutionChallenge"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/mocks/MockResultReceiver.sol": {
+      "lastModificationDate": 1720904375404,
+      "contentHash": "183b837bf9b9461cffc8079a7ab9c8cc",
+      "sourceName": "src/mocks/MockResultReceiver.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../challenge/IChallengeResultReceiver.sol",
+        "../challenge/IChallengeManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MockResultReceiver"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/osp/OneStepProofEntry.sol": {
+      "lastModificationDate": 1720904375416,
+      "contentHash": "797f86284714d4ae97d19fa71e55b5a9",
+      "sourceName": "src/osp/OneStepProofEntry.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../state/Deserialize.sol",
+        "../state/Machine.sol",
+        "../state/MerkleProof.sol",
+        "./IOneStepProver.sol",
+        "./IOneStepProofEntry.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OneStepProofEntry"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/osp/OneStepProverMath.sol": {
+      "lastModificationDate": 1720904375418,
+      "contentHash": "0e96b854fb52b681bd799272278e7356",
+      "sourceName": "src/osp/OneStepProverMath.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../state/Value.sol",
+        "../state/Machine.sol",
+        "../state/Module.sol",
+        "../state/Deserialize.sol",
+        "./IOneStepProver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OneStepProverMath"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/osp/OneStepProver0.sol": {
+      "lastModificationDate": 1720904375417,
+      "contentHash": "24abfbeb7aef044b82cc12bee31b970b",
+      "sourceName": "src/osp/OneStepProver0.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../state/Value.sol",
+        "../state/Machine.sol",
+        "../state/Module.sol",
+        "../state/Deserialize.sol",
+        "./IOneStepProver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OneStepProver0"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/mocks/UpgradeExecutorMock.sol": {
+      "lastModificationDate": 1720904375404,
+      "contentHash": "6aa82603900c78f56382ca0825e96a32",
+      "sourceName": "src/mocks/UpgradeExecutorMock.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol",
+        "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+        "@openzeppelin/contracts/utils/Address.sol",
+        "@offchainlabs/upgrade-executor/src/IUpgradeExecutor.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UpgradeExecutorMock"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/node_modules/@openzeppelin/contracts/security/ReentrancyGuard.sol": {
+      "lastModificationDate": 1720904360937,
+      "contentHash": "92f9448b23a90ea3bb932ee55cc3ccce",
+      "sourceName": "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/test-helpers/TestToken.sol": {
+      "lastModificationDate": 1720904375494,
+      "contentHash": "96b217484d2f1412401c57f3de06fd69",
+      "sourceName": "src/test-helpers/TestToken.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TestToken"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/mocks/ProxyAdminForBinding.sol": {
+      "lastModificationDate": 1720904375403,
+      "contentHash": "35685be5b66782dd5a118b5b98423bd9",
+      "sourceName": "src/mocks/ProxyAdminForBinding.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ProxyAdminForBinding"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/libraries/CryptographyPrimitives.sol": {
+      "lastModificationDate": 1720904375456,
+      "contentHash": "4bd4da9e8e95c7bf2ad4039bbcf44bf9",
+      "sourceName": "src/libraries/CryptographyPrimitives.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CryptographyPrimitives"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/test-helpers/CryptographyPrimitivesTester.sol": {
+      "lastModificationDate": 1720904375493,
+      "contentHash": "484385bb9b99e4ec98a38ee3cbd8429f",
+      "sourceName": "src/test-helpers/CryptographyPrimitivesTester.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libraries/CryptographyPrimitives.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CryptographyPrimitivesTester"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/osp/HashProofHelper.sol": {
+      "lastModificationDate": 1720904375414,
+      "contentHash": "e392ba1a218d5433f54c888e3789c3aa",
+      "sourceName": "src/osp/HashProofHelper.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libraries/CryptographyPrimitives.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "HashProofHelper"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/node-interface/NodeInterface.sol": {
+      "lastModificationDate": 1720904375408,
+      "contentHash": "cca788b1fa633dfe018672601acfe7fd",
+      "sourceName": "src/node-interface/NodeInterface.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "NodeInterface"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/node-interface/NodeInterfaceDebug.sol": {
+      "lastModificationDate": 1720904375409,
+      "contentHash": "8be2d3031b52f50813db4f02e79fd5f0",
+      "sourceName": "src/node-interface/NodeInterfaceDebug.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "NodeInterfaceDebug"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/precompiles/ArbAddressTable.sol": {
+      "lastModificationDate": 1720904375433,
+      "contentHash": "404d7efeba9975e50cfdf731148fedfe",
+      "sourceName": "src/precompiles/ArbAddressTable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "ArbAddressTable"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/precompiles/ArbAggregator.sol": {
+      "lastModificationDate": 1720904375426,
+      "contentHash": "196f35e32bd8a79d73ed23198cab219f",
+      "sourceName": "src/precompiles/ArbAggregator.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "ArbAggregator"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/precompiles/ArbBLS.sol": {
+      "lastModificationDate": 1720904375426,
+      "contentHash": "5ee13f6b092c02b3c61f3c9237f07aa2",
+      "sourceName": "src/precompiles/ArbBLS.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "ArbBLS"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/precompiles/ArbDebug.sol": {
+      "lastModificationDate": 1720904375431,
+      "contentHash": "4b0426199770955a03eedf0fd1dc49d6",
+      "sourceName": "src/precompiles/ArbDebug.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "ArbDebug"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/precompiles/ArbFunctionTable.sol": {
+      "lastModificationDate": 1720904375430,
+      "contentHash": "35e35ad90247f2bd0ba683939882c1c1",
+      "sourceName": "src/precompiles/ArbFunctionTable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "ArbFunctionTable"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/precompiles/ArbInfo.sol": {
+      "lastModificationDate": 1720904375429,
+      "contentHash": "cc646413a3ed9b8ee4655c247b4910df",
+      "sourceName": "src/precompiles/ArbInfo.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "ArbInfo"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/precompiles/ArbOwner.sol": {
+      "lastModificationDate": 1720904375431,
+      "contentHash": "a96684d70935663e735ce3279ffd601b",
+      "sourceName": "src/precompiles/ArbOwner.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "ArbOwner"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/precompiles/ArbOwnerPublic.sol": {
+      "lastModificationDate": 1720904375432,
+      "contentHash": "c485959bd87ec57b7e87c4e604eee854",
+      "sourceName": "src/precompiles/ArbOwnerPublic.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "ArbOwnerPublic"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/precompiles/ArbStatistics.sol": {
+      "lastModificationDate": 1720904375427,
+      "contentHash": "380bcb2be0bc5f5ce80ee66a0353e2c6",
+      "sourceName": "src/precompiles/ArbStatistics.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "ArbStatistics"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/precompiles/ArbosActs.sol": {
+      "lastModificationDate": 1720904375427,
+      "contentHash": "4fb24227ae44ea54c48bfb8258ec57cc",
+      "sourceName": "src/precompiles/ArbosActs.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "ArbosActs"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/precompiles/ArbosTest.sol": {
+      "lastModificationDate": 1720904375429,
+      "contentHash": "214cc31e8f34b40f0d8ddfff4d307a50",
+      "sourceName": "src/precompiles/ArbosTest.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.21 <0.9.0"
+      ],
+      "artifacts": [
+        "ArbosTest"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/state/PcArray.sol": {
+      "lastModificationDate": 1720904375459,
+      "contentHash": "1488c6c30b0d37eebbc94e67a326d83b",
+      "sourceName": "src/state/PcArray.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PcArrayLib"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/test-helpers/EthVault.sol": {
+      "lastModificationDate": 1720904375491,
+      "contentHash": "bf0773ce6acc094a76a78fe8537a3218",
+      "sourceName": "src/test-helpers/EthVault.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EthVault"
+      ]
+    },
+    "/Users/viraj/Development/ETHGlobalBrussels24MedicalRDA/nitro-contracts/src/test-helpers/RollupMock.sol": {
+      "lastModificationDate": 1720904375492,
+      "contentHash": "150af0cf7c2b83376995c82ad8072935",
+      "sourceName": "src/test-helpers/RollupMock.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 100
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "RollupMock"
+      ]
     }
   }
 }
