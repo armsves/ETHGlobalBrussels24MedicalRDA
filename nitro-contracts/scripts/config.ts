@@ -12,11 +12,11 @@ export const config = {
     baseStake: ethers.utils.parseEther('0.0001'),
     wasmModuleRoot:
       '0xba5ff5ddc46b5c63fa02168819b8e236fa18b4b551f20eba378e3543477298bf',
-    owner: '0xd1AE7F25ace194DF69eeF015a37C5EB9ED6b8733',
+    owner: '0x7c54a8134b4cA358611ac9EBa9a0916497f12723',
     loserStakeEscrow: ethers.constants.AddressZero,
-    chainId: ethers.BigNumber.from('201250004'),
+    chainId: ethers.BigNumber.from('2012500041'),
     chainConfig:
-      '{"chainId":201250004,"homesteadBlock":0,"daoForkBlock":null,"daoForkSupport":true,"eip150Block":0,"eip150Hash":"0x0000000000000000000000000000000000000000000000000000000000000000","eip155Block":0,"eip158Block":0,"byzantiumBlock":0,"constantinopleBlock":0,"petersburgBlock":0,"istanbulBlock":0,"muirGlacierBlock":0,"berlinBlock":0,"londonBlock":0,"clique":{"period":0,"epoch":0},"arbitrum":{"EnableArbOS":true,"AllowDebugPrecompiles":false,"DataAvailabilityCommittee":false,"InitialArbOSVersion":10,"InitialChainOwner":"0xd41996ED89bb5BF7dBfB181D8D93E8067446200B","GenesisBlockNum":0}}',
+      '{"chainId":2012500041,"homesteadBlock":0,"daoForkBlock":null,"daoForkSupport":true,"eip150Block":0,"eip150Hash":"0x0000000000000000000000000000000000000000000000000000000000000000","eip155Block":0,"eip158Block":0,"byzantiumBlock":0,"constantinopleBlock":0,"petersburgBlock":0,"istanbulBlock":0,"muirGlacierBlock":0,"berlinBlock":0,"londonBlock":0,"clique":{"period":0,"epoch":0},"arbitrum":{"EnableArbOS":true,"AllowDebugPrecompiles":false,"DataAvailabilityCommittee":false,"InitialArbOSVersion":10,"InitialChainOwner":"0xd41996ED89bb5BF7dBfB181D8D93E8067446200B","GenesisBlockNum":0}}',
     genesisBlockNum: ethers.BigNumber.from('0'),
     sequencerInboxMaxTimeVariation: {
       delayBlocks: ethers.BigNumber.from('5760'),
@@ -26,8 +26,8 @@ export const config = {
     },
   },
   validators: [
-    '0xd1AE7F25ace194DF69eeF015a37C5EB9ED6b8733',
+    '0x1234123412341234123412341234123412341234',
   ],
-  batchPosters: ['0xd1AE7F25ace194DF69eeF015a37C5EB9ED6b8733',],
-  batchPosterManager: '0xd1AE7F25ace194DF69eeF015a37C5EB9ED6b8733'
+  batchPosters: ['0x1234123412341234123412341234123412341234',],
+  batchPosterManager: '0x1234123412341234123412341234123412341234'
 }

@@ -1,9 +1,9 @@
 
 {
-    "chain": {
-      "info-json": "[{\"chain-id\":201250004,\"parent-chain-id\":421614,\"parent-chain-is-arbitrum\":true,\"chain-name\":\"based avail\",\"chain-config\":{\"homesteadBlock\":0,\"daoForkBlock\":null,\"daoForkSupport\":true,\"eip150Block\":0,\"eip150Hash\":\"0x0000000000000000000000000000000000000000000000000000000000000000\",\"eip155Block\":0,\"eip158Block\":0,\"byzantiumBlock\":0,\"constantinopleBlock\":0,\"petersburgBlock\":0,\"istanbulBlock\":0,\"muirGlacierBlock\":0,\"berlinBlock\":0,\"londonBlock\":0,\"clique\":{\"period\":0,\"epoch\":0},\"arbitrum\":{\"EnableArbOS\":true,\"AllowDebugPrecompiles\":false,\"DataAvailabilityCommittee\":false,\"InitialArbOSVersion\":11,\"GenesisBlockNum\":0,\"MaxCodeSize\":24576,\"MaxInitCodeSize\":49152,\"InitialChainOwner\":\"0xd1AE7F25ace194DF69eeF015a37C5EB9ED6b8733\"},\"chainId\":201250004},\"rollup\":{\"bridge\":\"0x37e5BfD8292d42d0B473512AbDD40dcCD8dd945c\",\"inbox\":\"0x3ba61Cc3B113c8D4e16aAD618122A540F7d7B29b\",\"sequencer-inbox\":\"0xDac90D6A78Fa4a7dEF917137d8E6f4205a06Eb7C\",\"rollup\":\"0x2a60d65347940135DcdcEF364B14bB4d7F8d8b28\",\"validator-utils\":\"0x45fAD786191AC2c4Ff18929A1b3EA7bDCF8717F0\",\"validator-wallet-creator\":\"0xf6Dd0075a00439687e5187E73de8A31d34cB1590\",\"deployed-at\":63614732}}]",
-      "name": "based avail"
-    },
+  "chain": {
+    "info-json": "[{\"chain-id\":201250004,\"parent-chain-id\":421614,\"parent-chain-is-arbitrum\":true,\"chain-name\":\"based avail\",\"chain-config\":{\"homesteadBlock\":0,\"daoForkBlock\":null,\"daoForkSupport\":true,\"eip150Block\":0,\"eip150Hash\":\"0x0000000000000000000000000000000000000000000000000000000000000000\",\"eip155Block\":0,\"eip158Block\":0,\"byzantiumBlock\":0,\"constantinopleBlock\":0,\"petersburgBlock\":0,\"istanbulBlock\":0,\"muirGlacierBlock\":0,\"berlinBlock\":0,\"londonBlock\":0,\"clique\":{\"period\":0,\"epoch\":0},\"arbitrum\":{\"EnableArbOS\":true,\"AllowDebugPrecompiles\":false,\"DataAvailabilityCommittee\":false,\"InitialArbOSVersion\":11,\"GenesisBlockNum\":0,\"MaxCodeSize\":24576,\"MaxInitCodeSize\":49152,\"InitialChainOwner\":\"0x7c54a8134b4cA358611ac9EBa9a0916497f12723\"},\"chainId\":201250004},\"rollup\":{\"bridge\":\"0x53f232995D1bf762868A352F9e660D09288a41E9\",\"inbox\":\"0x58B33Bc581CA06e45B3847580f70e722ad538279\",\"sequencer-inbox\":\"0x0d5F07a553109a9E835719B14DeA8AD480dfBfdc\",\"rollup\":\"0x51ba7e3b4948980c908B2B99AcfA2fEedCef538a\",\"validator-utils\":\"0x45fAD786191AC2c4Ff18929A1b3EA7bDCF8717F0\",\"validator-wallet-creator\":\"0xf6Dd0075a00439687e5187E73de8A31d34cB1590\",\"deployed-at\":63649965}}]",
+    "name": "based avail"
+  },
     "parent-chain": {
       "connection": {
         "url": "https://sepolia-rollup.arbitrum.io/rpc"
@@ -37,14 +37,14 @@
         "max-size": 90000,
         "enable": true,
         "parent-chain-wallet": {
-          "private-key": "key"
+          "private-key": "b9b5fc45987d24b770858b6110d95b4b484573f70dd7e707cd9bd7e5149ae963"
         }
       },
       "staker": {
         "enable": true,
         "strategy": "MakeNodes",
         "parent-chain-wallet": {
-          "private-key": "key"
+          "private-key": "b9b5fc45987d24b770858b6110d95b4b484573f70dd7e707cd9bd7e5149ae963"
         }
       },
       "dangerous": {
@@ -52,7 +52,7 @@
       },
       "avail": {
         "enable": true,
-        "seed": "",
+        "seed": "loop cross easily approve immune blossom mom leg stick abuse sure judge",
         "avail-api-url": "wss://turing-rpc.avail.so/ws",
         "app-id": "66",
         "timeout":"100s",

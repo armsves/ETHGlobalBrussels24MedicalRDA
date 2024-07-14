@@ -19,6 +19,7 @@
     "wagmi": "^2.9.2"
   },
   "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
     "@types/node": "^18.19.3",
     "@types/react": "^18.3.0",
     "typescript": "5.4.2"
