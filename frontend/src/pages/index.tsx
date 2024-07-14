@@ -2,13 +2,13 @@ import { ConnectButton, connectorsForWallets, } from '@rainbow-me/rainbowkit';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import { useAccount, useWriteContract, useWaitForTransactionReceipt } from 'wagmi';
+import { useAccount, useWriteContract, useReadContract, useWaitForTransactionReceipt } from 'wagmi';
 import { initialize, getKeyringFromSeed } from 'avail-js-sdk';
 import { AES, enc } from 'crypto-js';
 import config from '../config/config';
 import React, { useState } from 'react';
 import Image from 'next/image'
-import { abi } from './abi.ts'
+import { abi, wagmiContractConfig } from './abi.ts'
 
 const Home: NextPage = () => {
   const { address } = useAccount();
@@ -20,7 +20,7 @@ const Home: NextPage = () => {
   const [decryptedData, setDecryptedData] = useState('');
   type EthereumAddress = `0x${string}`;
   const { data: hash, writeContract } = useWriteContract();
-
+  const [verificationResponse, setVerificationResponse] = useState(null);
 
   const [patientAddress, setPatientAddress] = useState<EthereumAddress>('0x0000000000000000000000000000000000000000');
   const [isLoading, setIsLoading] = useState(false);
@@ -163,7 +163,7 @@ const Home: NextPage = () => {
   };
 
   const executeFunction = async () => {
-    console.log('Function executed!');
+    console.log('Store Function executed!');
 
     const response = await writeContract({
       address: '0xFBA3912Ca04dd458c843e2EE08967fC04f3579c2',
@@ -180,6 +180,32 @@ const Home: NextPage = () => {
     useWaitForTransactionReceipt({
       hash,
     })
+
+  const handleButtonVerify = async () => {
+    console.log('Verify Function executed!');
+
+    const { data: dataHash } = await useReadContract({
+      ...wagmiContractConfig,
+      functionName: 'reportHash',
+      args: [patientAddress],
+    })
+
+    const safePatientAddress = patientAddress ?? '0x0000000000000000000000000000000000000000';
+    const safeDataHash = dataHash ?? '0x0000000000000000000000000000000000000000';
+
+    if (hash !== undefined) {
+      const { data: response } = await useReadContract({
+        ...wagmiContractConfig,
+        functionName: 'verifyPatientRecord',
+        args: [safePatientAddress, safeDataHash],
+      })
+      console.log('Response:', response);
+
+    }
+
+    console.log('Hash:', dataHash);
+
+  }
 
   return (
     <div className={styles.container}>
@@ -201,96 +227,127 @@ const Home: NextPage = () => {
           <ConnectButton />
         </div>
 
-        <div className="medicalForm">
-          <input
-            className={styles.medicalInput}
-            type="text"
-            value={patientAddress}
-            onChange={(e) => {
-              const value = e.target.value;
-              if (value.startsWith('0x') || value === '') {
-                setPatientAddress(value as `0x${string}`);
-              } else {
-                // Optionally, show some error or feedback to the user indicating the expected format
-                console.error("Address must start with '0x'.");
-              }
-            }}
-            placeholder="Patient Address"
-          />
-          <input
-            className={styles.medicalInput}
-            type="file"
-            accept="application/pdf"
-            onChange={(e) => {
-              if (e.target.files && e.target.files.length > 0) {
-                setMedicalData([e.target.files[0]]);
-              }
-            }}
-            placeholder="Upload Sensitive Medical Data"
-          />
-          <button className={`${styles.medicalButton} ${styles.storeButton}`} onClick={executeFunction}>Execute Function</button>
-        </div>
+        <div>
+          <div className="medicalForm">
+            <input
+              className={styles.medicalInput}
+              type="text"
+              value={patientAddress}
+              onChange={(e) => {
+                const value = e.target.value;
+                if (value.startsWith('0x') || value === '') {
+                  setPatientAddress(value as `0x${string}`);
+                } else {
+                  // Optionally, show some error or feedback to the user indicating the expected format
+                  console.error("Address must start with '0x'.");
+                }
+              }}
+              placeholder="Patient Address"
+            />
+            <input
+              className={styles.medicalInput}
+              type="file"
+              accept="application/pdf"
+              onChange={(e) => {
+                if (e.target.files && e.target.files.length > 0) {
+                  setMedicalData([e.target.files[0]]);
+                }
+              }}
+              placeholder="Upload Sensitive Medical Data"
+            />
+            <button className={`${styles.medicalButton} ${styles.storeButton}`} onClick={executeFunction}>Execute Function</button>
+          </div>
 
+          <div className="medicalForm">
+            <input
+              className={styles.medicalInput}
+              type="text"
+              value={patientAddress}
+              onChange={(e) => {
+                const value = e.target.value;
+                if (value.startsWith('0x') || value === '') {
+                  setPatientAddress(value as `0x${string}`);
+                } else {
+                  // Optionally, show some error or feedback to the user indicating the expected format
+                  console.error("Address must start with '0x'.");
+                }
+              }}
+              placeholder="Patient Address"
+            />
+            <button className={`${styles.medicalButton} ${styles.retrieveButton}`} onClick={handleButtonVerify}>Verify Report</button>
+          </div>
+        </div>
+        
         {hash && <div>Transaction Hash: {hash}</div>}
         {isConfirming && <div>Waiting for confirmation...</div>}
         {isConfirmed && <div>Transaction confirmed.</div>}
 
-        {address && (
-          <>
-            <div className="container">
-              <div className="medicalForm">
-                <input
-                  className={styles.medicalInput}
-                  type="file"
-                  accept="application/pdf"
-                  onChange={(e) => {
-                    if (e.target.files && e.target.files.length > 0) {
-                      setMedicalData([e.target.files[0]]);
-                    }
-                  }}
-                  placeholder="Upload Sensitive Medical Data"
-                />
+        {verificationResponse && (<div>Verification Response: {verificationResponse}</div>)}
 
-                <button className={`${styles.medicalButton} ${styles.storeButton}`} onClick={handleButtonClick}>Store PDF File</button>
+        {
+          /*
+          address && (
+            <>
+              <div className="container">
+                <div className="medicalForm">
+                  <input
+                    className={styles.medicalInput}
+                    type="file"
+                    accept="application/pdf"
+                    onChange={(e) => {
+                      if (e.target.files && e.target.files.length > 0) {
+                        setMedicalData([e.target.files[0]]);
+                      }
+                    }}
+                    placeholder="Upload Sensitive Medical Data"
+                  />
+
+                  <button className={`${styles.medicalButton} ${styles.storeButton}`} onClick={handleButtonClick}>Store PDF File</button>
+                </div>
+
+                <div className="medicalForm">
+                  <input
+                    className={styles.medicalInput}
+                    type="text"
+                    value={txHash}
+                    onChange={(e) => setTxHash(e.target.value)}
+                    placeholder="Transaction Hash"
+                  />
+                  <input
+                    className={styles.medicalInput}
+                    type="text"
+                    value={blockHash}
+                    onChange={(e) => setBlockHash(e.target.value)}
+                    placeholder="Block Hash"
+                  />
+                  <button className={`${styles.medicalButton} ${styles.retrieveButton}`} onClick={handleButtonClickRetrieve}>Retrieve Data</button>
+                </div>
               </div>
+            </>
+          )
+            */
+        }
 
-              <div className="medicalForm">
-                <input
-                  className={styles.medicalInput}
-                  type="text"
-                  value={txHash}
-                  onChange={(e) => setTxHash(e.target.value)}
-                  placeholder="Transaction Hash"
-                />
-                <input
-                  className={styles.medicalInput}
-                  type="text"
-                  value={blockHash}
-                  onChange={(e) => setBlockHash(e.target.value)}
-                  placeholder="Block Hash"
-                />
-                <button className={`${styles.medicalButton} ${styles.retrieveButton}`} onClick={handleButtonClickRetrieve}>Retrieve Data</button>
+        {
+          isLoading && (
+            <div className={styles.fullScreenCenter}>
+              <div className={styles.loader}>
+                Sending data...
+                <div className={styles.animation}></div>
               </div>
             </div>
-          </>
-        )}
+          )
+        }
 
-        {isLoading && (
-          <div className={styles.fullScreenCenter}>
-            <div className={styles.loader}>
-              Sending data...
-              <div className={styles.animation}></div>
+        {
+          decryptedData && pdfUrl && (
+            <div className={styles.medicalData}>
+              <h2 className={styles.title}>Decrypted Sensitive Medical Data</h2>
+              <a href={pdfUrl} download="downloadedDocument.pdf" className={`${styles.medicalButton} ${styles.retrieveButton}`} >Download PDF</a>
             </div>
-          </div>
-        )}
-
-        {decryptedData && pdfUrl && (
-          <div className={styles.medicalData}>
-            <h2 className={styles.title}>Decrypted Sensitive Medical Data</h2>
-            <a href={pdfUrl} download="downloadedDocument.pdf" className={`${styles.medicalButton} ${styles.retrieveButton}`} >Download PDF</a>
-          </div>
-        )}
-      </main>
+          )
+        }
+      </main >
 
       <footer className={styles.footer}>
         Powered by
@@ -298,7 +355,7 @@ const Home: NextPage = () => {
         and
         <Image src={`/assets/orbit.svg`} alt="Orbit Logo" width="64" height="64" className={styles.imageStyle} />
       </footer>
-    </div>
+    </div >
   );
 };
 
