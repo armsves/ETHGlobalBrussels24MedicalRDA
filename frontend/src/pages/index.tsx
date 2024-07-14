@@ -13,10 +13,9 @@ import { abi, wagmiContractConfig } from './abi.ts'
 import { NextResponse } from 'next/server';
 
 
-function DisplayVerification (params: { hash: Address, patientAddress2: Address}) {
+function DisplayVerification (params: { patientAddress2: Address}) {
   const { data: dataHash } = useReadContract({
-    address: '0xFBA3912Ca04dd458c843e2EE08967fC04f3579c2',
-    abi,
+    ...wagmiContractConfig,
     functionName: 'reportHash',
     args: [params.patientAddress2],
   })
@@ -25,8 +24,7 @@ function DisplayVerification (params: { hash: Address, patientAddress2: Address}
   const safeDataHash = dataHash ?? '0x0000000000000000000000000000000000000000';
 
   const { data: response } = useReadContract({
-    address: '0xFBA3912Ca04dd458c843e2EE08967fC04f3579c2',
-    abi,
+    ...wagmiContractConfig,
     functionName: 'verifyPatientRecord',
     args: [safePatientAddress2, safeDataHash],
   })
@@ -293,7 +291,7 @@ const Home: NextPage = () => {
         {isConfirming && <div>Waiting for confirmation...</div>}
         {isConfirmed && <div>Transaction confirmed.</div>}
 
-        {buttonVerify && ( <><DisplayVerification hash={hash as Address} patientAddress2={patientAddress2}/></>)}
+        {buttonVerify && ( <><DisplayVerification patientAddress2={patientAddress2}/></>)}
 
         {
           /*
