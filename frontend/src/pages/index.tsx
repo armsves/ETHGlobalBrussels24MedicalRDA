@@ -236,6 +236,8 @@ const Home: NextPage = () => {
           <ConnectButton />
         </div>
 
+
+
         <div>
           <div className="medicalForm">
             <input
@@ -266,16 +268,20 @@ const Home: NextPage = () => {
             />
             <button className={`${styles.medicalButton} ${styles.storeButton}`} onClick={executeFunction}>Execute Function</button>
           </div>
+          </div>
+
+          {
+  /*
 
           <div className="medicalForm">
             <input
               className={styles.medicalInput}
               type="text"
-              value={patientAddress}
+              value={patientAddress2}
               onChange={(e) => {
                 const value = e.target.value;
                 if (value.startsWith('0x') || value === '') {
-                  setPatientAddress(value as `0x${string}`);
+                  setPatientAddress2(value as `0x${string}`);
                 } else {
                   // Optionally, show some error or feedback to the user indicating the expected format
                   console.error("Address must start with '0x'.");
@@ -287,12 +293,14 @@ const Home: NextPage = () => {
           </div>
         </div>
 
+
         {hash && <div>Transaction Hash: {hash}</div>}
         {isConfirming && <div>Waiting for confirmation...</div>}
         {isConfirmed && <div>Transaction confirmed.</div>}
 
         {buttonVerify && ( <><DisplayVerification patientAddress2={patientAddress2}/></>)}
-
+  */
+}
         {
           /*
           address && (
