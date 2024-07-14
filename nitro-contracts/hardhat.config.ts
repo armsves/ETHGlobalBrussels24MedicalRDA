@@ -84,7 +84,7 @@ module.exports = {
     },
     local : {
       url: 'http://127.0.0.1:8449/',
-      chainId: 2012500041,
+      chainId: 201250004,
       accounts: [process.env['DEVNET_PRIVKEY']],
       throwOnTransactionFailures: true,
       allowUnlimitedContractSize: true,
