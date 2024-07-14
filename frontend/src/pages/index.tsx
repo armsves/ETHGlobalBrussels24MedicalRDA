@@ -20,9 +20,12 @@ const Home: NextPage = () => {
   const [decryptedData, setDecryptedData] = useState('');
   type EthereumAddress = `0x${string}`;
   const { data: hash, writeContract } = useWriteContract();
-  const [verificationResponse, setVerificationResponse] = useState(null);
+  const [verificationResponse, setVerificationResponse] = useState(false);
+  const [buttonVerify, setButtonVerify] = useState(false);
 
   const [patientAddress, setPatientAddress] = useState<EthereumAddress>('0x0000000000000000000000000000000000000000');
+  const [patientAddress2, setPatientAddress2] = useState<EthereumAddress>('0x0000000000000000000000000000000000000000');
+
   const [isLoading, setIsLoading] = useState(false);
   const [pdfUrl, setPdfUrl] = useState('');
   const [encryptedData, setEncryptedData] = useState<string>('');
@@ -181,30 +184,30 @@ const Home: NextPage = () => {
       hash,
     })
 
+  const { data: dataHash } = useReadContract({
+    address: '0xFBA3912Ca04dd458c843e2EE08967fC04f3579c2',
+    abi,
+    functionName: 'reportHash',
+    args: [patientAddress2],
+  })
+
+  const safePatientAddress2 = patientAddress2 ?? '0x0000000000000000000000000000000000000000';
+  const safeDataHash = dataHash ?? '0x0000000000000000000000000000000000000000';
+
+  const { data: response } = useReadContract({
+    address: '0xFBA3912Ca04dd458c843e2EE08967fC04f3579c2',
+    abi,
+    functionName: 'verifyPatientRecord',
+    args: [safePatientAddress2, safeDataHash],
+  })
+
+  setVerificationResponse(response as boolean);
+
+  console.log('Hash:', dataHash);
+
   const handleButtonVerify = async () => {
     console.log('Verify Function executed!');
-
-    const { data: dataHash } = await useReadContract({
-      ...wagmiContractConfig,
-      functionName: 'reportHash',
-      args: [patientAddress],
-    })
-
-    const safePatientAddress = patientAddress ?? '0x0000000000000000000000000000000000000000';
-    const safeDataHash = dataHash ?? '0x0000000000000000000000000000000000000000';
-
-    if (hash !== undefined) {
-      const { data: response } = await useReadContract({
-        ...wagmiContractConfig,
-        functionName: 'verifyPatientRecord',
-        args: [safePatientAddress, safeDataHash],
-      })
-      console.log('Response:', response);
-
-    }
-
-    console.log('Hash:', dataHash);
-
+    setButtonVerify(true)
   }
 
   return (
@@ -277,12 +280,12 @@ const Home: NextPage = () => {
             <button className={`${styles.medicalButton} ${styles.retrieveButton}`} onClick={handleButtonVerify}>Verify Report</button>
           </div>
         </div>
-        
+
         {hash && <div>Transaction Hash: {hash}</div>}
         {isConfirming && <div>Waiting for confirmation...</div>}
         {isConfirmed && <div>Transaction confirmed.</div>}
 
-        {verificationResponse && (<div>Verification Response: {verificationResponse}</div>)}
+        {buttonVerify && (<div>Verification Response: {verificationResponse}</div>)}
 
         {
           /*
