@@ -2,12 +2,13 @@ import { ConnectButton, connectorsForWallets, } from '@rainbow-me/rainbowkit';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import { useAccount } from 'wagmi';
+import { useAccount, useWriteContract, useWaitForTransactionReceipt } from 'wagmi';
 import { initialize, getKeyringFromSeed } from 'avail-js-sdk';
 import { AES, enc } from 'crypto-js';
 import config from '../config/config';
 import React, { useState } from 'react';
 import Image from 'next/image'
+import { abi } from './abi.ts'
 
 const Home: NextPage = () => {
   const { address } = useAccount();
@@ -17,6 +18,11 @@ const Home: NextPage = () => {
   const [blockHash, setBlockHash] = useState('');
   const [medicalData, setMedicalData] = useState<File[] | null>(null);
   const [decryptedData, setDecryptedData] = useState('');
+  type EthereumAddress = `0x${string}`;
+  const { data: hash, writeContract } = useWriteContract();
+
+
+  const [patientAddress, setPatientAddress] = useState<EthereumAddress>('0x0000000000000000000000000000000000000000');
   const [isLoading, setIsLoading] = useState(false);
   const [pdfUrl, setPdfUrl] = useState('');
   const [encryptedData, setEncryptedData] = useState<string>('');
@@ -39,7 +45,7 @@ const Home: NextPage = () => {
     }
     return new Blob([bytes], { type });
   };
-  
+
   const handleButtonClick = async () => {
     const file = medicalData && medicalData.length > 0 ? medicalData[0] : null;
     console.log('file', file);
@@ -47,9 +53,9 @@ const Home: NextPage = () => {
       const base64 = await blobToBase64(file);
       const encrypted = await AES.encrypt(base64, secretKey).toString();
       setEncryptedData(encrypted);
-      console.log('File encrypted and stored',encryptedData);
+      console.log('File encrypted and stored', encryptedData);
     }
-  
+
     if (!encryptedData) {
       alert('No encrypted data found');
       return;
@@ -148,13 +154,32 @@ const Home: NextPage = () => {
       const decrypted = await AES.decrypt(encryptedDocContent, secretKey);
       const base64 = await decrypted.toString(enc.Utf8);
       const decryptedBlob = await base64ToBlob(base64);
-  
+
       const pdfUrl = await URL.createObjectURL(decryptedBlob);
       setPdfUrl(pdfUrl);
       const decryptedContent = "decripted";
       return decryptedContent;
     }
   };
+
+  const executeFunction = async () => {
+    console.log('Function executed!');
+
+    const response = await writeContract({
+      address: '0xFBA3912Ca04dd458c843e2EE08967fC04f3579c2',
+      abi,
+      functionName: 'storePatientData',
+      args: [patientAddress, encryptedData],
+    })
+
+    console.log('Response:', await response);
+
+  };
+
+  const { isLoading: isConfirming, isSuccess: isConfirmed } =
+    useWaitForTransactionReceipt({
+      hash,
+    })
 
   return (
     <div className={styles.container}>
@@ -175,6 +200,40 @@ const Home: NextPage = () => {
           </h1>
           <ConnectButton />
         </div>
+
+        <div className="medicalForm">
+          <input
+            className={styles.medicalInput}
+            type="text"
+            value={patientAddress}
+            onChange={(e) => {
+              const value = e.target.value;
+              if (value.startsWith('0x') || value === '') {
+                setPatientAddress(value as `0x${string}`);
+              } else {
+                // Optionally, show some error or feedback to the user indicating the expected format
+                console.error("Address must start with '0x'.");
+              }
+            }}
+            placeholder="Patient Address"
+          />
+          <input
+            className={styles.medicalInput}
+            type="file"
+            accept="application/pdf"
+            onChange={(e) => {
+              if (e.target.files && e.target.files.length > 0) {
+                setMedicalData([e.target.files[0]]);
+              }
+            }}
+            placeholder="Upload Sensitive Medical Data"
+          />
+          <button className={`${styles.medicalButton} ${styles.storeButton}`} onClick={executeFunction}>Execute Function</button>
+        </div>
+
+        {hash && <div>Transaction Hash: {hash}</div>}
+        {isConfirming && <div>Waiting for confirmation...</div>}
+        {isConfirmed && <div>Transaction confirmed.</div>}
 
         {address && (
           <>
@@ -225,25 +284,19 @@ const Home: NextPage = () => {
           </div>
         )}
 
-        {pdfUrl && (
-          <a href={pdfUrl} download="downloadedDocument.pdf">
-            Download PDF
-          </a>
-        )}
-
-        {decryptedData && (
+        {decryptedData && pdfUrl && (
           <div className={styles.medicalData}>
             <h2 className={styles.title}>Decrypted Sensitive Medical Data</h2>
-            <p className={styles.description}>{decryptedData}</p>
+            <a href={pdfUrl} download="downloadedDocument.pdf" className={`${styles.medicalButton} ${styles.retrieveButton}`} >Download PDF</a>
           </div>
         )}
       </main>
 
       <footer className={styles.footer}>
         Powered by
-        <Image src={`/assets/availDA.svg`} alt="AvailDA Logo" width="64" height="64" style={{ marginLeft: '5px', marginRight: '5px' }} />
+        <Image src={`/assets/availDA.svg`} alt="AvailDA Logo" width="64" height="64" className={styles.imageStyle} />
         and
-        <Image src={`/assets/orbit.svg`} alt="Orbit Logo" width="64" height="64" style={{ marginLeft: '5px', marginRight: '5px' }} />
+        <Image src={`/assets/orbit.svg`} alt="Orbit Logo" width="64" height="64" className={styles.imageStyle} />
       </footer>
     </div>
   );

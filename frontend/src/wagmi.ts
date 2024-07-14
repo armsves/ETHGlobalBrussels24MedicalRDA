@@ -1,4 +1,4 @@
-import { getDefaultConfig } from '@rainbow-me/rainbowkit';
+import { getDefaultConfig, Chain, } from '@rainbow-me/rainbowkit';
 import {
   /*
   arbitrum,
@@ -10,11 +10,26 @@ import {
   arbitrumSepolia,
 } from 'wagmi/chains';
 
+const avalanche = {
+  id: 201250004,
+  name: 'Arbitrum Orbit AvailDA',
+  iconUrl: 'https://s2.coinmarketcap.com/static/img/coins/64x64/11841.png',
+  iconBackground: '#fff',
+  nativeCurrency: { name: 'Ethereum', symbol: 'ETH', decimals: 18 },
+  rpcUrls: {
+    default: { http: ['http://127.0.0.1:8449'] },
+  },
+  blockExplorers: {
+    default: { name: 'Explorer', url: 'http://localhost' },
+  },
+} as const satisfies Chain;
+
 export const config = getDefaultConfig({
   appName: 'Medical Recods DA',
   projectId: 'MEDICALRECORDSDA',
   chains: [
-    arbitrumSepolia,
+    avalanche,
+    //arbitrumSepolia,
     /*
     mainnet,
     polygon,
