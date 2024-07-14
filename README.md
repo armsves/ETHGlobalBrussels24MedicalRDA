@@ -1,22 +1,27 @@
 # Medical DA
 
-The idea with this project is to have a potential solution to the problem of [Medical Record Secure Storage](https://corodata.com/challenges-facing-medical-records-management) which faces quite a few challenges in the web2 ecosystem
+The idea of this project is to have a potential solution to the problem of [Medical Record Verfiabilability By Insurance Companies](https://www.quickquote.com/do-health-insurers-have-access-to-medical-records/) which faces quite a few challenges in the web2 ecosystem
 
 ## Solution 
 
-We have come with a solution to this problem thanks to [Arbitrium Orbit](https://arbitrum.io/orbit) & [Avail DA](https://www.availproject.org/da), the idea is that we encrypt the medical record file of a patient when it is uploaded by the hospital staff to the avail DA and we store the tx info from there in a smart contract deployed on a custom rollup through arbitrium orbit so this allows cheap & secure data storage and ease of data retrieval through the help of the DA layer
+We have come up with a solution to this problem thanks to [Arbitrium Orbit](https://arbitrum.io/orbit) & [Avail DA](https://www.availproject.org/da), the idea is that we have spun our own custom rollup powered by arbitrium nitro and doctors/hospitals can then upload medical records through our platforms and we then send that data to our smart contract deployed on arbitrium nitro and hash it on chain, now since arbitrium nitro already sends data to avail da so we have validity proof based data availability guarantee there, hence if an insurance company wants to verify the data posted by the hospital/doctors they can just pass the patient address and the hash of the records they are verifying to the smart contract.
 
 
 ## How it Works ?
 
 - The hospital staff comes to our platform and uploads the patient file
 
-- we encrypt that data with Advanced Encryption Standard (AES) key and send it avail DA, we get back and tx and block hash from their & call `function storePatientData(AvailMetadata memory _reportMetadata) public onlyOwner` in our contract where we send the tx, blokc hash and the patient name as part of metadata data
+- we send the base64 string of the document to the smart contract where it is hashed and stored against the patient and this data is hence indirectly posted to avail da through arbitrium orbit
 
-- from the UI we can get the encrypted data from the DA and decrypt through the AES key
+- The insurance company can later verify the records by passing the patient address and the hashed data of the records they wanna verify against
 
 ***Note***
 
-- for the hackathon we are storing the decryption key is hardcoded but in mainstream this process would be decentralized
+- for the hackathon we are assuming that 1 patient has only 1 medical record
 
-- we have also deployed the contract to [Fluent Devnet](https://blockscout.dev.thefluent.xyz/address/0x5FbDB2315678afecb367f032d93F642f64180aa3) as we think when fluent-avail DA integration happens like with arbitrium orbit this could be more powerful as it involve more L3 netowrks in a way
+- we have also deployed the contract to [Scroll](https://sepolia.scrollscan.com/address/0xf51a074d3038aa1181f64622cb1fb48b14b7af1f#code) as we think when a scroll-avail DA integration happens like with arbitrium orbit this could be more powerful usecase as it involves more L3 netowrks in a way
+
+
+## Deployments
+- [Scroll](https://sepolia.scrollscan.com/address/0xf51a074d3038aa1181f64622cb1fb48b14b7af1f#code)
+- [Arbitrium Orbit](http://localhost/address/0xFBA3912Ca04dd458c843e2EE08967fC04f3579c2)
