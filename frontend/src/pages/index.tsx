@@ -3,12 +3,41 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { useAccount, useWriteContract, useReadContract, useWaitForTransactionReceipt } from 'wagmi';
+import { Address } from 'viem'
 import { initialize, getKeyringFromSeed } from 'avail-js-sdk';
 import { AES, enc } from 'crypto-js';
 import config from '../config/config';
 import React, { useState } from 'react';
 import Image from 'next/image'
 import { abi, wagmiContractConfig } from './abi.ts'
+import { NextResponse } from 'next/server';
+
+
+function DisplayVerification (params: { hash: Address, patientAddress2: Address}) {
+  const { data: dataHash } = useReadContract({
+    address: '0xFBA3912Ca04dd458c843e2EE08967fC04f3579c2',
+    abi,
+    functionName: 'reportHash',
+    args: [params.patientAddress2],
+  })
+
+  const safePatientAddress2 = params.patientAddress2 ?? '0x0000000000000000000000000000000000000000';
+  const safeDataHash = dataHash ?? '0x0000000000000000000000000000000000000000';
+
+  const { data: response } = useReadContract({
+    address: '0xFBA3912Ca04dd458c843e2EE08967fC04f3579c2',
+    abi,
+    functionName: 'verifyPatientRecord',
+    args: [safePatientAddress2, safeDataHash],
+  })
+  //setVerificationResponse(response as boolean);
+
+  return (
+    <div>
+      <div>Verification Response: {response}</div>
+    </div>
+  )
+}
 
 const Home: NextPage = () => {
   const { address } = useAccount();
@@ -184,27 +213,6 @@ const Home: NextPage = () => {
       hash,
     })
 
-  const { data: dataHash } = useReadContract({
-    address: '0xFBA3912Ca04dd458c843e2EE08967fC04f3579c2',
-    abi,
-    functionName: 'reportHash',
-    args: [patientAddress2],
-  })
-
-  const safePatientAddress2 = patientAddress2 ?? '0x0000000000000000000000000000000000000000';
-  const safeDataHash = dataHash ?? '0x0000000000000000000000000000000000000000';
-
-  const { data: response } = useReadContract({
-    address: '0xFBA3912Ca04dd458c843e2EE08967fC04f3579c2',
-    abi,
-    functionName: 'verifyPatientRecord',
-    args: [safePatientAddress2, safeDataHash],
-  })
-
-  setVerificationResponse(response as boolean);
-
-  console.log('Hash:', dataHash);
-
   const handleButtonVerify = async () => {
     console.log('Verify Function executed!');
     setButtonVerify(true)
@@ -285,7 +293,7 @@ const Home: NextPage = () => {
         {isConfirming && <div>Waiting for confirmation...</div>}
         {isConfirmed && <div>Transaction confirmed.</div>}
 
-        {buttonVerify && (<div>Verification Response: {verificationResponse}</div>)}
+        {buttonVerify && ( <><DisplayVerification hash={hash as Address} patientAddress2={patientAddress2}/></>)}
 
         {
           /*
